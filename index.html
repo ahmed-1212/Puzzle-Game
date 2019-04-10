@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <div id="app">
+        <div class="word-block">
+            <!-- Word Set Number One-->
+            <ul class="letters letters-set1">
+                <li v-for="letter in letters1"  :class="letter.class">{{letter.l}}</li>
+            </ul>
+            <ul class="word word-set1">
+                <li v-for="word in word1" :class="word.class">{{word.l}}</li>
+            </ul>
+            <div class="square colloection1">
+                <div class="sq current"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+            </div>
+
+            <!-- Word Set Number Two-->
+            <ul class="letters letters-set2">
+                <li v-for="letter in letters2"  :class="letter.class">{{letter.l}}</li>
+            </ul>
+            <ul class="word word-set2">
+                <li v-for="word in word2" :class="word.class">{{word.l}}</li>
+            </ul>
+            <div class="square colloection2">
+                <div class="sq current"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+            </div>
+            
+            <!-- Word Set Number Three-->
+            <ul class="letters letters-set3">
+                <li v-for="letter in letters3"  :class="letter.class">{{letter.l}}</li>
+            </ul>
+            <ul class="word word-set3">
+                <li v-for="word in word3" :class="word.class">{{word.l}}</li>
+            </ul>
+            <div class="square colloection3">
+                <div class="sq current"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+                <div class="sq"></div>
+            </div>
+        </div>
+        <div class="right-words">
+            <h2>Solved Word:</h2>
+            <div :class="wordd.class" v-for="wordd in wordRight"><p>Word Number{{wordd.num}}: </p>{{wordd.word}}<i class="far fa-check-circle"></i></div>
+            <h3>Reload The Page To Play Again</h3>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/jquery-3.2.1.min (1).js"></script>
+    <script src="js/plugin.js"></script>
+</body>
+</html>

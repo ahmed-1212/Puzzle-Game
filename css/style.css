@@ -1,0 +1,135 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex: 1;
+}
+
+.word-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.letters,.word,.letters-set2 {
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: -10px;
+    left: -38px
+}
+
+.letters-set1 {
+    top: -15px;
+    left: -105px
+}
+
+
+
+.letters li,
+.word li {
+    font-size: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: inline
+}
+
+.letters-set2,.letters-set3 {
+    display: none;
+    left: -102px
+}
+
+.letters-set3 {
+    top: 18px;
+    left: -25px
+}
+
+.word {
+    position: relative;
+    left: -48px;
+}
+
+.word .r {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    margin-right: 0
+}
+
+.word-set3 .r {
+    margin: 0 30px 0 13px;
+    line-height: 104px
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 39%;
+    top: 48.5%;
+    z-index: -1
+}
+
+.square > div {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #444
+}
+
+.colloection1
+{
+    top: 46.5%
+}
+
+.colloection2,.colloection3 {
+    display: none
+}
+
+.colloection2 > div,.colloection3 > div
+{
+    display: inline-block;
+    border: 2px solid #444;
+    margin-right: -5px;
+    margin-top: 12px;
+}
+
+.colloection3
+{
+    left: 38.9%;
+    top: 49.5%;
+}
+
+.right-words {
+    width: 40%;
+    text-align: center;
+    font-size: 26px;
+}
+
+.right-words > div  {
+   display: none
+}
+
+.right-words > div p {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: -20px;
+}
+
+.right-words > div i{
+    margin-left: 10px;
+    color: #1bbe1b
+}
+
+h3 {
+    display: none
+}
